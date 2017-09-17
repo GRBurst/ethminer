@@ -117,13 +117,13 @@ endfunction()
 
 
 hunter_add_package(Boost COMPONENTS system)
-find_package(Boost CONFIG REQUIRED COMPONENTS system)
+find_package(Boost REQUIRED COMPONENTS system)
 
 hunter_add_package(jsoncpp)
-find_package(jsoncpp CONFIG REQUIRED)
+find_package(jsoncpp REQUIRED)
 
 hunter_add_package(libjson-rpc-cpp)
-find_package(libjson-rpc-cpp CONFIG REQUIRED)
+find_package(libjson-rpc-cpp REQUIRED)
 
 configureProject()
 
